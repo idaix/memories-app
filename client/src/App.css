@@ -1,4 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Norican&family=Righteous&display=swap');
+
+body{
+    background-color: #f1f1f1;
+}
+body.dark{
+    --tw-bg-opacity: 1;
+    background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+
+
 img {
     max-width: 100%;
     width: 100%;
+}
+
+
+.font-arizonia{
+    font-family: 'Arizonia', cursive;
+}
+.font-righteous{
+    font-family: 'Righteous', cursive;
+}
+.font-norican{
+    font-family: 'Norican', cursive;
 }
