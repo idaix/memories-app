@@ -12,13 +12,13 @@ import postRoutes from './routes/posts.js'
 const app = express();
 
 
-// setup routers
-app.use('/posts', postRoutes);
-
-
 app.use(bodyParser.json({ limit: '30mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
+
+
+// setup routers
+app.use('/posts', postRoutes);
 
 
 const CONNECTION_URL = 'mongodb://admin:admin@cluster0-shard-00-00.omurn.mongodb.net:27017,cluster0-shard-00-01.omurn.mongodb.net:27017,cluster0-shard-00-02.omurn.mongodb.net:27017/?ssl=true&replicaSet=atlas-vwkpug-shard-0&authSource=admin&retryWrites=true&w=majority';

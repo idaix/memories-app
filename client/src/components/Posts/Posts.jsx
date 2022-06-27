@@ -8,7 +8,7 @@ const Posts = () => {
   console.log("posts...");
   console.log(posts);
   return (
-    <div className="bg-red-100 p-3 rounded-sm">
+    <div className="bg-white p-3 rounded-sm shadow-sm">
         <Post />
         <Post />
         <Post />

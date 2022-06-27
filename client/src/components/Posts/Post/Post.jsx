@@ -1,6 +1,6 @@
 const Post = () => {
   return (
-    <div>Post</div>
+    <div className="bg-blue-50 rounded-sm p-2 mb-1">Post</div>
   )
 }
 
